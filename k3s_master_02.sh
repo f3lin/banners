@@ -1,11 +1,18 @@
 #!/bin/bash
 
-echo "\033[1;31m$(printf '%.0s' {1..80})\033[0m"
-echo "\033[1;35m          ██╗ii██╗██████╗i███████╗iiiiiii██████╗██████╗iiiiiiii██████╗i██████╗ii\033[0m"
-echo "\033[1;35m          ██║i██╔╝╚════██╗██╔════╝iiiiii██╔════╝██╔══██╗iiiiii██╔═████╗╚════██╗i\033[0m"
-echo "\033[1;35m          █████╔╝ii█████╔╝███████╗█████╗██║iiiii██████╔╝█████╗██║██╔██║i█████╔╝i\033[0m"
-echo "\033[1;35m          ██╔═██╗ii╚═══██╗╚════██║╚════╝██║iiiii██╔═══╝i╚════╝████╔╝██║██╔═══╝ii\033[0m"
-echo "\033[1;35m          ██║ii██╗██████╔╝███████║iiiiii╚██████╗██║iiiiiiiiiii╚██████╔╝███████╗i\033[0m"
-echo "\033[1;35m          ╚═╝ii╚═╝╚═════╝i╚══════╝iiiiiii╚═════╝╚═╝iiiiiiiiiiii╚═════╝i╚══════╝i\033[0m"
-echo "\033[1;35m          iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii\033[0m"
-echo "\033[1;31m$(printf '%.0s' {1..80})\033[0m"
+# Set the line length to match your banner
+LINE_LENGTH=80
+
+# Print top border line (using 256-color orange)
+printf "\033[38;5;208m%s\033[0m\n" "$(printf '─%.0s' $(seq 1 $LINE_LENGTH))"
+echo
+echo "\033[1;33m          ██╗ii██╗██████╗i███████╗iiiiiii██████╗██████╗iiiiiiii██████╗i██████╗ii\033[0m"
+echo "\033[1;33m          ██║i██╔╝╚════██╗██╔════╝iiiiii██╔════╝██╔══██╗iiiiii██╔═████╗╚════██╗i\033[0m"
+echo "\033[1;33m          █████╔╝ii█████╔╝███████╗█████╗██║iiiii██████╔╝█████╗██║██╔██║i█████╔╝i\033[0m"
+echo "\033[1;33m          ██╔═██╗ii╚═══██╗╚════██║╚════╝██║iiiii██╔═══╝i╚════╝████╔╝██║██╔═══╝ii\033[0m"
+echo "\033[1;33m          ██║ii██╗██████╔╝███████║iiiiii╚██████╗██║iiiiiiiiiii╚██████╔╝███████╗i\033[0m"
+echo "\033[1;33m          ╚═╝ii╚═╝╚═════╝i╚══════╝iiiiiii╚═════╝╚═╝iiiiiiiiiiii╚═════╝i╚══════╝i\033[0m"
+echo "\033[1;33m          iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii\033[0m"
+
+# Print bottom border line (using 256-color orange)
+printf "\033[38;5;208m%s\033[0m\n" "$(printf '─%.0s' $(seq 1 $LINE_LENGTH))"
