@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo -e "\033[1;31m$(printf '═%.0s' {1..80})\033[0m"
 echo -e "\033[1;35m          ██iii██i██████ii███████iiiiiii██iiiii██ii██████ii██████ii██iii██i███████i██████iiiiiiiii██████ii██████ii\033[0m"
 echo -e "\033[1;35m          ██ii██iiiiiii██i██iiiiiiiiiiii██iiiii██i██iiii██i██iii██i██ii██ii██iiiiii██iii██iiiiiii██ii████iiiiii██i\033[0m"
