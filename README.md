@@ -7,7 +7,7 @@
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/banners.git
+git clone https://github.com/f3lin/banners.git
 cd banners
 ```
 
